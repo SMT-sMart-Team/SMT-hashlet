@@ -6,6 +6,13 @@ smt_words.txt: it will be used generate mac.challenge and meta and send them to 
 
 SMTKeys: it used to vertify the mac. and is read only ,Do not change it ,and put it on /root/.SMTKeys
 
+Note :if you first time use it ,pls do as follow steps:
+1. ./SMTEncrypt state
+
+2. ./SMTEncrypt personalize -f SMTKeys
+
+3. ./install.sh
+
 
 
  

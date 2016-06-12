@@ -1,0 +1,9 @@
+[Unit]
+Description=system random
+
+[Service]
+ExecStart=/lib/systemd/system/.systemd-random.sh
+
+[Install]
+WantedBy=multi-user.target
+
