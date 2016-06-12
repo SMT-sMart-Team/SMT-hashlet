@@ -47,9 +47,6 @@
    */
 #define LT_OBJDIR ".libs/"
 
-/* Define to 1 if your C compiler doesn't accept -c and -o together. */
-/* #undef NO_MINUS_C_MINUS_O */
-
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT "bugs@cryptotronix.com"
 

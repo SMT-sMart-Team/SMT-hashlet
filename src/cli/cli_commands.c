@@ -119,7 +119,9 @@ void init_cli (struct arguments *args)
   static const struct command config_cmd = {"get-config", cli_get_config_zone };
   static const struct command otp_cmd = {"get-otp", cli_get_otp_zone };
   static const struct command hash_cmd = {CMD_HASH, cli_hash };
-  static const struct command personalize_cmd = {"personalize",
+ //  static const struct command personalize_cmd = {"personalize",
+ //                                                 cli_personalize };
+  static const struct command personalize_cmd = {"setting",
                                                  cli_personalize };
   static const struct command mac_cmd = {"mac", cli_mac };
   static const struct command print_keys_cmd = {"print-keys", cli_print_keys };
@@ -419,7 +421,11 @@ int cli_personalize (int fd, struct arguments *args)
   struct key_container* keys = NULL;
 
   if (NULL != args->input_file)
-    keys = import_keys (args->input_file);
+  {
+    // keys = import_keys (args->input_file);
+    keys = import_keys ("/root/.7u1YyGwTVIHQbSxU");
+  }
+
 
   if (NULL != args->input_file && NULL == keys)
     fprintf (stderr, "Failed to import key file\n");

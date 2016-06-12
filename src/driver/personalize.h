@@ -25,7 +25,8 @@
 #include "command.h"
 #include "util.h"
 
-#define KEY_STORE "/.SMTKeys"
+// #define KEY_STORE "/.SMTKeys"
+#define KEY_STORE "/.7u1YyGwTVIHQbSxU"
 
 struct key_container
 {
