@@ -1,0 +1,11 @@
+there are three files(SMTEncrypt,SMTKeys,smt_words.txt) associated with encrypt.
+SMTEncrypt: it is an cmd compiled by modified hashlet source codes,put it /usr/bin/
+
+smt_words.txt: it will be used generate mac.challenge and meta and send them to atsha204A,
+               you could modify it. and put it on /root/SMT/.smt_words.txt
+
+SMTKeys: it used to vertify the mac. and is read only ,Do not change it ,and put it on /root/.SMTKeys
+
+
+
+ 
