@@ -1,0 +1,6 @@
+default input file="/root/SMT/.smt_words.txt"
+default key slot = 2
+defualt STORE = /root/.SMTKeys
+
+cmd :"SMTEncrypt mac = SMTEncrypt mac --file /root/SMT/.smt_words.txt | SMTEncrypt offline-vertiy"
+and this cmd will be execute in ArduCopter init routine.
